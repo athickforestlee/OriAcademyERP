@@ -1,0 +1,120 @@
+CMD창 실행하셔서
+
+비트나미 경로로 접속. 
+
+cd C:\Bitnami\wampstack-8.0.3-2\mysql\bin
+
+로그인
+
+mysql -uroot -p
+
+password는 각자 지정한대로 입력하여 로그인.
+
+로그인 되었으면 이하 문장 모두 복사하여 cmd에 붙여넣기 하면 끝.(그대로 복사 붙여넣기만 하면 됩니다)
+
+DROP DATABASE orieduaca;
+
+CREATE DATABASE orieduaca default character set utf8;
+
+USE orieduaca
+
+DROP TABLE student;
+
+CREATE TABLE student(
+stdnum INT(11) PRIMARY KEY NOT NULL, 
+sname VARCHAR(5) NULL,
+sphone VARCHAR(11) NULL,
+email VARCHAR(30) NULL,
+zipcode VARCHAR(5) NULL,
+address VARCHAR(50) NULL,
+school VARCHAR(15) NULL,
+class VARCHAR(4) NULL,
+note TEXT NULL,
+pname VARCHAR(5) NULL,
+pphone VARCHAR(11) NULL,
+paydate VARCHAR(2) NULL,
+bank VARCHAR(8) NULL,
+baccount VARCHAR(20) NULL,
+bname VARCHAR(5) NULL
+);
+
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021001,'박해민','01093619456','a1@never.com','13155','경기 성남시 중원구 은이로 21','경기고등학교','2/1','','박대기','01093619451','1','우리은행','119-911-111','박대기');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021002,'강백호','01032943294','a2@never.com','13150','경기 성남시 중원구 성남대로 997','휘문고등학교','2/3','there\'s no special note.','강민호','01032943292','2','국민은행','119-911-112','강민호');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021003,'이정후','01034578943','a3@never.com','12111','경기 과천시 광명로 181','중앙고등학교','2/5','','이종범','01034578944','3','신한은행','119-911-113','이종범');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021004,'양의지','01023409843','a4@never.com','10234','서울 관악구 성현로 80','제일고등학교','2/2','','양한나','01023409845','4','도이치은행','119-911-114','양한나');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021005,'김현수','01023490123','a5@never.com','10544','서울 용산구 녹사평대로 150','가락고등학교','2/4','','김영수','01023490126','5','중국은행','119-911-115','김영수');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021006,'오재일','01098035431','a6@never.com','10523','서울 마포구 와우산로 94','제물포고등학교','1/1','','오재원','01098035437','4','인민은행','119-911-116','오재원');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021007,'오지환','01080934560','a7@never.com','10654','서울 영등포구 도신로 31','선린인터넷고등학교','1/2','','오지훈','01080934568','5','하나은행','119-911-117','오지훈');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021008,'황재균','01010354923','a8@never.com','10111','서울 금천구 시흥대로73길 70','광춘상업고등학교','1/3','','황정민','01010354929','6','제일은행','119-911-118','황정민');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021009,'최주환','01032523611','a9@never.com','10111','서울 금천구 시흥대로73길 71','광주제일고등학교','1/3','','최익현','01032523613','15','유안타은행','119-912-111','최익현');
+INSERT INTO student (stdnum,sname,sphone,email,zipcode,address,school,class,note,pname,pphone,paydate,bank,baccount,bname) VALUES (2021010,'오승환','01038043421','a0@never.com','10111','서울 금천구 시흥대로73길 72','마산중앙고등학교','1/3','','오달수','01038043426','12','한국은행','719-911-118','오달수');
+DROP TABLE lecture;
+
+CREATE TABLE lecture(
+lecnum INT(11) PRIMARY KEY NOT NULL, 
+lname VARCHAR(5) NULL,
+pname VARCHAR(5) NULL,
+loc VARCHAR(4) NULL,
+price VARCHAR(7) NULL
+);
+
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (101,'문학','이병인','101','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (102,'비문학','하철종','102','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (103,'미분','민지홍','103','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (104,'적분','박상근','104','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (105,'생물','김주홍','105','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (201,'화학','주상철','106','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (202,'물리','여원모','107','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (203,'정치','공득영','201','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (204,'경제','최병식','202','50000');
+INSERT INTO lecture (lecnum,lname,pname,loc,price) VALUES (205,'윤리','이지영','203','100000');
+
+DROP TABLE payment;
+
+CREATE TABLE payment(
+paynum BIGINT(14) PRIMARY KEY NOT NULL, 
+stdnum INT(11) NULL,
+lecnum INT(11) NULL,
+paymentyn CHAR(1) NULL
+);
+
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101001,2021001,203,'Y');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101002,2021001,204,'N');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101003,2021003,205,'Y');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101004,2021003,103,'Y');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101005,2021003,104,'Y');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101006,2021009,105,'Y');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101007,2021009,201,'N');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101008,2021009,202,'N');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101009,2021009,203,'Y');
+INSERT INTO payment (paynum,stdnum,lecnum,paymentyn) VALUES (2021001101010,2021009,204,'Y');
+
+DROP TABLE score;
+
+CREATE TABLE score(
+scorenum INT(11) PRIMARY KEY NOT NULL, 
+semester VARCHAR(9) NULL,
+studyname VARCHAR(10) NULL,
+score VARCHAR(3) NULL,
+examname VARCHAR(10) NULL,
+type VARCHAR(2) NULL,
+stdnum INT(11) NULL
+);
+
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021001001,'2021-1학기','국어','85','중간고사','수시',2021001);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021002001,'2021-1학기','수학','65','중간고사','수시',2021002);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021003001,'2021-1학기','사회','20','기말고사','수시',2021003);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021004001,'2021-1학기','과학','99','3월 모의고사','정시',2021004);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021005001,'2021-1학기','영어','70','3월 모의고사','정시',2021005);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021006001,'2021-2학기','국어','45','09월 모의고사','정시',2021006);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021007001,'2021-2학기','수학','68','09월 모의고사','정시',2021007);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021008001,'2021-2학기','사회','34','09월 모의고사','정시',2021008);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021009001,'2021-2학기','과학','0','09월 모의고사','정시',2021009);
+INSERT INTO score (scorenum,semester,studyname,score,examname,type,stdnum) VALUES (2021010001,'2021-2학기','영어','95','09월 모의고사','정시',2021010);
+COMMIT;
+
+SELECT * FROM student;
+SELECT * FROM lecture;
+SELECT * FROM payment;
+SELECT * FROM score;
+
