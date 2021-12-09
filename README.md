@@ -1,4 +1,5 @@
 # OriAcademyERP
+[Winform, C#, MySQL]
 <h2>오리아카데미 직원이 사용하는 ERP프로그램 입니다.</h2>
 
 <img width="100%" src="https://user-images.githubusercontent.com/82954812/145417509-d3326cc8-1145-4e71-a7d3-55bb607392b3.PNG"/>
