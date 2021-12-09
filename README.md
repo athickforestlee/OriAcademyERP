@@ -15,6 +15,11 @@
   <li>학생이 선택된 상태에서 삭제 버튼을 누르면 데이터그리드에 있던 해당 학생의 모든 정보가 사라집니다.</li>
 </ol>
 <br><br><br><br>
+<img width="100%" src="https://user-images.githubusercontent.com/82954812/145417548-3bfc41ec-d158-47e1-9683-3cc53b5cb232.PNG"/>
+<ol>
+  <li></li>
+</ol>
+<br><br><br><br>
 <img width="100%" src="https://user-images.githubusercontent.com/82954812/145417546-be1b27d7-0688-49b4-84b2-d90113d79e72.PNG"/>
 <ol>
   <li>수납정보 화면입니다. 조회 기능은 같습니다.</li>
@@ -24,11 +29,6 @@
   <li>강의납부여부 데이터그리드 내 강의 납부 정보를 클릭하면 하단 4개의 텍스트박스에 각 정보들이 표시됩니다.</li>
   <li>텍스트박스중 강의료납부여부의 텍스트박스는 'Y'혹은 'N'을 입력하여 저장버튼을 누르면 납부여부를 변경할 수 있습니다. </li>
   <li>강의료납부여부의 텍스트박스에 다른 글자나 숫자가 들어가면 오류메시지가 전송되며, 'y'혹은'n'을 입력하면 'Y'혹은'N'로 변경됩니다.</li>
-</ol>
-<br><br><br><br>
-<img width="100%" src="https://user-images.githubusercontent.com/82954812/145417548-3bfc41ec-d158-47e1-9683-3cc53b5cb232.PNG"/>
-<ol>
-  <li></li>
 </ol>
 <br><br><br><br>
 <img width="100%" src="https://user-images.githubusercontent.com/82954812/145417550-9f2b6852-94c3-478d-9104-4cf983bf0bba.PNG"/>
